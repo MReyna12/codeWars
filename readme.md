@@ -14,6 +14,6 @@ When feasible, I try to provide more than one solution for each challenge.
 
 ## Lessons Learned:
 
-Codewars challenges help me put into practice the concepts I have learned and help me develop my critical-thinking skills.
+Codewars challenges help me put into practice the concepts I have learned and bolster my critical-thinking skills.
 
 Reviewing solutions also enables me to practice new ways to solve future challenges.
