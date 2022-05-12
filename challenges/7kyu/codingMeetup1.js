@@ -25,15 +25,10 @@ function countDevelopers(list) {
   return europeanJSDevs.length;
 }
 
-// Function declaration; reduce method
+// Function declaration; reduce method; ternary operator
 function countDevelopers(list) {
-  let europeanJSDevs = 0;
-  list.reduce((acc, currentVal) => {
-    if (currentVal.continent === 'Europe' && currentVal.language === 'JavaScript') {
-      acc += 1;
-      europeanJSDevs = acc;
-    }
-    return acc;
-  }, 0);
-  return europeanJSDevs;
+  return list.reduce((acc, developer) => 
+    (developer.continent === 'Europe' && developer.language === 'JavaScript')
+      ? acc + 1 : acc
+    , 0);
 }
