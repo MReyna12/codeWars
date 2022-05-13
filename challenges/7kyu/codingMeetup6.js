@@ -7,7 +7,7 @@
 //P: array of objects
 //R: return true if the value of each language in each object within the array is the same otherwise return false
 //E: isSameLanguage([{language: 'JavaScript'}, {language: 'JavaScript'}]) // true; isSameLanguage([{language: 'JavaScript'}, {language:'JavaScript'}, {language:'Python'}]) // false
-//P: every method; for loop with a conditional inside to check if the value in the every method is equal to the value in the for loop
+//P: every method; for loop with a conditional inside to check if the value in the every method is equal to the value in the for loop or easier way is every method that checks if each parameter.language within every is === to the first object's language
 
 // Function declaration; forEach method; for loop; conditional
 function isSameLanguage(list) {
