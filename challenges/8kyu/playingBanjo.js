@@ -3,12 +3,15 @@
 
 // Function declaration; if/else statement
 function areYouPlayingBanjo(name) {
-  if ((name[0] === 'r') || (name[0] === 'R')) {
+  if (name[0] === "r" || name[0] === "R") {
     return `${name} plays banjo`;
   } else {
-      return `${name} does not play banjo`;
+    return `${name} does not play banjo`;
   }
 }
 
 // Function expression; ternary operator
-const areYouPlayingBanjo = name => (name[0] === 'R') || (name[0] === 'r') ? `${name} plays banjo` : `${name} does not play banjo`;
+const areYouPlayingBanjo = (name) =>
+  name[0] === "R" || name[0] === "r"
+    ? `${name} plays banjo`
+    : `${name} does not play banjo`;

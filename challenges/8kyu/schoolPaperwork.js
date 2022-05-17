@@ -7,4 +7,4 @@ function paperwork(n, m) {
 }
 
 // Function expression/arrow function
-const paperwork = (n, m) => n < 0 || m < 0 ? 0 : n * m;
+const paperwork = (n, m) => (n < 0 || m < 0 ? 0 : n * m);

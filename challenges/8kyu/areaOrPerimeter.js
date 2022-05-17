@@ -3,12 +3,12 @@
 // Note: for the purposes of this kata you will assume that it is a square if its length and width are equal, otherwise it is a rectangle.
 
 // Function expression
-const areaOrPerimeter = function(l, w) {
+const areaOrPerimeter = function (l, w) {
   let sum = 0;
   if (l === w) {
     sum += l * w;
   } else {
-      sum += (l + l) + (w + w);
+    sum += l + l + (w + w);
   }
   return sum;
-}
+};

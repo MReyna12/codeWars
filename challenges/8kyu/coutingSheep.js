@@ -12,7 +12,7 @@ function countSheeps(arrayOfSheep) {
 }
 
 // Function expression/arrow function
-const countSheeps = arrayOfSheep => {
+const countSheeps = (arrayOfSheep) => {
   let totalSheep = 0;
   for (let i = 0; i < arrayOfSheep.length; i++) {
     if (arrayOfSheep[i]) {
@@ -20,10 +20,14 @@ const countSheeps = arrayOfSheep => {
     }
   }
   return totalSheep;
-}
+};
 
 // Function declaration/reduce method with ternary operator & short circuit evaluation
 function countSheeps(arrayOfSheep) {
   let totalSheep = 0;
-  return arrayOfSheep.reduce((prev, current) => prev === true || current === true ? totalSheep += 1 : totalSheep, 0);
+  return arrayOfSheep.reduce(
+    (prev, current) =>
+      prev === true || current === true ? (totalSheep += 1) : totalSheep,
+    0
+  );
 }

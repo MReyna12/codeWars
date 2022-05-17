@@ -6,12 +6,15 @@
 
 // Function declaration; reduce method
 function betterThanAverage(classPoints, yourPoints) {
-  return classPoints.reduce((acc, current) => acc + current) / classPoints.length < yourPoints;
+  return (
+    classPoints.reduce((acc, current) => acc + current) / classPoints.length <
+    yourPoints
+  );
 }
 
 // Function expression; reduce method
 const betterThanAverage = (classPoints, yourPoints) => {
-  const classAverage = classPoints.reduce((acc, current) => acc + current) / classPoints.length;
+  const classAverage =
+    classPoints.reduce((acc, current) => acc + current) / classPoints.length;
   return classAverage < yourPoints;
-}
-
+};

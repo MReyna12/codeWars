@@ -6,7 +6,7 @@
 
 //  Function declaration; forEach method
 function greetDevelopers(list) {
-  list.forEach(developer => {
+  list.forEach((developer) => {
     developer.greeting = `Hi ${developer.firstName}, what do you like the most about ${developer.language}?`;
   });
   return list;
@@ -14,8 +14,8 @@ function greetDevelopers(list) {
 
 // Function declaration; map method
 function greetDevelopers(list) {
-  list.map(developer => {
+  list.map((developer) => {
     developer.greeting = `Hi ${developer.firstName}, what do you like the most about ${developer.language}?`;
   });
-  return list
+  return list;
 }

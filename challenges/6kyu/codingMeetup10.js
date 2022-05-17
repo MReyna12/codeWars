@@ -6,9 +6,9 @@
 //  write a function that adds the username property to each object in the input array
 //  The value of the username property is composed by concatenating:
 //    firstName in lower-case;
-//    first letter of the lastName in lower-case; and 
+//    first letter of the lastName in lower-case; and
 //    the birth year which for the purpose of this kata is calculated simply by subtracting age from the current year.
-//    Please make sure that your function delivers the correct birth year irrespective of when it will be executed, for example it should also work correctly for a meetup organised in 10-years-time. 
+//    Please make sure that your function delivers the correct birth year irrespective of when it will be executed, for example it should also work correctly for a meetup organised in 10-years-time.
 //    The example above assumes that the function is run in year 2020.
 //  The input array will always be valid and formatted as in the example above.
 //  Age is represented by a number which can be any positive integer.
@@ -23,26 +23,26 @@
 
 //Function declaration; forEach method; dot notation to add new key to object
 function addUsername(list) {
-  list.forEach(developer => {
+  list.forEach((developer) => {
     const firstName = developer.firstName.toLowerCase();
     const lastNameInitial = developer.lastName[0].toLowerCase();
     const today = new Date();
-    const birthYear = today.getFullYear() - developer.age
-    const userName = `${firstName}${lastNameInitial}${birthYear}`
-    developer.username = userName
+    const birthYear = today.getFullYear() - developer.age;
+    const userName = `${firstName}${lastNameInitial}${birthYear}`;
+    developer.username = userName;
   });
   return list;
 }
 
 //Function declaration; map method; dot notation to add new key to object
 function addUsername(list) {
-  return list.map(developer => {
+  return list.map((developer) => {
     const firstName = developer.firstName.toLowerCase();
     const lastNameInitial = developer.lastName[0].toLowerCase();
     const today = new Date();
-    const birthYear = today.getFullYear() - developer.age
-    const userName = `${firstName}${lastNameInitial}${birthYear}`
-    developer.username = userName
-    return developer
+    const birthYear = today.getFullYear() - developer.age;
+    const userName = `${firstName}${lastNameInitial}${birthYear}`;
+    developer.username = userName;
+    return developer;
   });
 }

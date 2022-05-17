@@ -3,5 +3,5 @@
 
 // Function declaration; every method
 function smallEnough(a, limit) {
-  return a.every(number => number <= limit);
+  return a.every((number) => number <= limit);
 }

@@ -2,17 +2,24 @@
 
 // Function declaration/arrow function
 function fakeBin(x) {
-  return x.split('').map(num => num <= 4 ? 0 : 1).join('');
+  return x
+    .split("")
+    .map((num) => (num <= 4 ? 0 : 1))
+    .join("");
 }
 
 // Function expression/arrow function
-let fakeBin = x => x.split('').map(num => num <= 4 ? 0 : 1).join('')
+let fakeBin = (x) =>
+  x
+    .split("")
+    .map((num) => (num <= 4 ? 0 : 1))
+    .join("");
 
 // For loop
 function fakeBin(x) {
-  let binaryString = '';
+  let binaryString = "";
   for (i = 0; i < x.length; i++) {
-    x[i] <= 4 ? binaryString += '0' : binaryString += '1';
+    x[i] <= 4 ? (binaryString += "0") : (binaryString += "1");
   }
   return binaryString;
 }

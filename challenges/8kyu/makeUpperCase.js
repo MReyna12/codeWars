@@ -6,4 +6,4 @@ function makeUpperCase(str) {
 }
 
 // Function expression/arrow function
-const makeUpperCase = str => str.toUpperCase();
+const makeUpperCase = (str) => str.toUpperCase();

@@ -7,4 +7,4 @@ function sumMix(x) {
 }
 
 // Function expression; arrow function; reduce method; unary operator to convert currentval to a number (only need to convert currentVal because acc starts at 0 which is a number)
-const sumMix = x => x.reduce((acc, currentVal) => acc + +currentVal, 0);
+const sumMix = (x) => x.reduce((acc, currentVal) => acc + +currentVal, 0);

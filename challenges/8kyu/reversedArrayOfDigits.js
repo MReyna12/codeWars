@@ -3,7 +3,7 @@
 // Function declaration
 function digitize(n) {
   let numberString = n.toString();
-  let array = numberString.split('');
+  let array = numberString.split("");
   let reversedString = array.reverse();
   let numberArray = reversedString.map(Number);
   return numberArray;
@@ -16,13 +16,13 @@ function digitize(n) {
 }*/
 
 // Function expression/arrow function
-let digitize = n => {
+let digitize = (n) => {
   let numberString = n.toString();
-  let array = numberString.split('');
+  let array = numberString.split("");
   let reversedString = array.reverse();
   let numberArray = reversedString.map(Number);
   return numberArray;
-}
+};
 
 // Same as above but removed the variables
 
@@ -33,8 +33,8 @@ let numberArray = [];
 
 function digitize(n) {
   let numberString = n.toString();
-  let array = numberString.split('');
-  for(let i = array.length - 1; i >= 0; i--) {
+  let array = numberString.split("");
+  for (let i = array.length - 1; i >= 0; i--) {
     numberArray.push(Number(array[i]));
   }
   return numberArray;

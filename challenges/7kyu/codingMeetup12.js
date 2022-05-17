@@ -11,16 +11,19 @@
 
 // Function declaration; filter method; comparison operator
 function findAdmin(list, lang) {
-  return list.filter(developer => developer.language === lang && developer.githubAdmin === 'yes');
+  return list.filter(
+    (developer) =>
+      developer.language === lang && developer.githubAdmin === "yes"
+  );
 }
 
 // Function declaration; forEach method; comparison operator
 function findAdmin(list, lang) {
   let newArray = [];
-  list.forEach(developer => {
-    if (developer.language === lang && developer.githubAdmin === 'yes') {
+  list.forEach((developer) => {
+    if (developer.language === lang && developer.githubAdmin === "yes") {
       newArray.push(developer);
     }
   });
-  return newArray
+  return newArray;
 }

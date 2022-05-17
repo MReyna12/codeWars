@@ -2,9 +2,9 @@
 
 // Function Declaration
 function maps(x) {
-  return x.map(num => num * 2);
+  return x.map((num) => num * 2);
 }
 
 // Function Expression
 
-let maps = x => x.map(num => num * 2)
+let maps = (x) => x.map((num) => num * 2);

@@ -2,8 +2,8 @@
 
 // Function declaration/arrow function
 function invert(array) {
-  return array.map(element => element * -1);
+  return array.map((element) => element * -1);
 }
 
 // Function expression/arrow function
-const invert = array => array.map(element => element * -1);
+const invert = (array) => array.map((element) => element * -1);

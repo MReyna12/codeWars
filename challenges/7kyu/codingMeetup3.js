@@ -5,21 +5,23 @@
 
 // Function declaration; some method
 function isRubyComing(list) {
-  const doesRubyExist = list.some(developer => developer.language === 'Ruby');
+  const doesRubyExist = list.some((developer) => developer.language === "Ruby");
   return doesRubyExist;
 }
 
 // Function declaration; find method; ternary operator
 function isRubyComing(list) {
-  return list.find(developer => developer.language === 'Ruby') ? true : false;
+  return list.find((developer) => developer.language === "Ruby") ? true : false;
 }
 
 // Function declaration; filter method; conditional
 function isRubyComing(list) {
-  const rubyDevs = list.filter(developer => developer.language === 'Ruby').length;
+  const rubyDevs = list.filter(
+    (developer) => developer.language === "Ruby"
+  ).length;
   if (rubyDevs > 0) {
     return true;
   } else {
-      return false;
-  };
+    return false;
+  }
 }

@@ -4,17 +4,20 @@
 
 // Function declaration; arrow function; reduce method
 function getAverage(marks) {
-  return Math.floor(marks.reduce((acc, current) => (acc += current)) / marks.length);
+  return Math.floor(
+    marks.reduce((acc, current) => (acc += current)) / marks.length
+  );
 }
 
 // Function expression; arrow function; reduce method
-const getAverage = marks => Math.floor(marks.reduce((acc, current) => (acc += current)) / marks.length);
+const getAverage = (marks) =>
+  Math.floor(marks.reduce((acc, current) => (acc += current)) / marks.length);
 
 // Function declaration; for loop
 function getAverage(marks) {
   let grades = 0;
   for (let i = 0; i < marks.length; i++) {
-    grades += marks[i]
+    grades += marks[i];
   }
   return Math.floor(grades / marks.length);
 }

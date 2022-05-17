@@ -14,5 +14,5 @@ function getAverageAge(list) {
     sumOfAges = acc + devAge.age;
     return sumOfAges;
   }, 0);
-  return Math.round(sumOfAges / divisor)
+  return Math.round(sumOfAges / divisor);
 }

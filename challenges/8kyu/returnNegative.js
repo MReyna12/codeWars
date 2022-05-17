@@ -5,9 +5,9 @@
 // Function declaration/if else conditional statement
 function makeNegative(num) {
   if (num <= 0) {
-    return num
+    return num;
   } else {
-      return num * -1;
+    return num * -1;
   }
 }
 
@@ -17,4 +17,4 @@ function makeNegative(num) {
 }
 
 // Function expression/arrow function/ternary operator
-const makeNegative = num => num <= 0 ? num : num * -1;
+const makeNegative = (num) => (num <= 0 ? num : num * -1);

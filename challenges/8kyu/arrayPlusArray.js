@@ -4,7 +4,7 @@
 // Function declaration; concat method; arrow function; reduce method
 function arrayPlusArray(arr1, arr2) {
   const arrays = arr1.concat(arr2);
-  const sum = arrays.reduce((acc, current) => acc + current, 0)
+  const sum = arrays.reduce((acc, current) => acc + current, 0);
   return sum;
 }
 // Function declaration; one-liner; concat method; arrow function; reduce method
@@ -13,7 +13,8 @@ function arrayPlusArray(arr1, arr2) {
 }
 
 // Function expression; concat method; arrow function; reduce method
-const arrayPlusArray = (arr1, arr2) => arr1.concat(arr2).reduce((acc, current) => acc + current, 0);
+const arrayPlusArray = (arr1, arr2) =>
+  arr1.concat(arr2).reduce((acc, current) => acc + current, 0);
 
 // Function declaration (similar to above, but reduce the arrays separately)
 function arrayPlusArray(arr1, arr2) {

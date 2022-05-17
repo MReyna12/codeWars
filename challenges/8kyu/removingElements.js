@@ -3,5 +3,5 @@
 
 // Function declaration; filter method
 function removeEveryOther(arr) {
- return arr.filter((_, i) => i % 2 === 0)
+  return arr.filter((_, i) => i % 2 === 0);
 }

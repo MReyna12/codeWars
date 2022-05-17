@@ -9,6 +9,8 @@
 // Function declaration; sort method; filter method;
 function findSenior(list) {
   const sortedArray = list.sort((a, b) => a.age - b.age);
-  const filteredArray = sortedArray.filter(developer => developer.age === list[list.length - 1].age)
+  const filteredArray = sortedArray.filter(
+    (developer) => developer.age === list[list.length - 1].age
+  );
   return filteredArray;
 }

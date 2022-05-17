@@ -2,18 +2,18 @@
 // Example : n=5 --> [5,4,3,2,1]
 
 // Function expression; arrow function; for loop
-const reverseSeq = n => {
+const reverseSeq = (n) => {
   let array = [];
-  for (let i = n; i > 0; i-- ) {
+  for (let i = n; i > 0; i--) {
     array.push(i);
   }
   return array;
-}
+};
 
 // Function declaration; for loop
 function reverseSeq(n) {
   let array = [];
-  for (let i = n; i > 0; i-- ) {
+  for (let i = n; i > 0; i--) {
     array.push(i);
   }
   return array;

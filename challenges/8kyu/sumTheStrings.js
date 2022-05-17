@@ -4,5 +4,5 @@
 
 // Function declaration
 function sumStr(a, b) {
-  return (+a + +b).toString()
+  return (+a + +b).toString();
 }

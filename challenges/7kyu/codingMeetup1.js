@@ -6,8 +6,11 @@
 // Function declaration; forEach method
 function countDevelopers(list) {
   let europeanJSDevs = 0;
-  list.forEach(developer => {
-    if (developer.continent === 'Europe' && developer.language === 'JavaScript') {
+  list.forEach((developer) => {
+    if (
+      developer.continent === "Europe" &&
+      developer.language === "JavaScript"
+    ) {
       europeanJSDevs += 1;
     }
   });
@@ -17,8 +20,11 @@ function countDevelopers(list) {
 // Function declaration; filter method; push method;
 function countDevelopers(list) {
   let europeanJSDevs = [];
-  list.filter(developer => {
-    if (developer.continent === 'Europe' && developer.language === 'JavaScript') {
+  list.filter((developer) => {
+    if (
+      developer.continent === "Europe" &&
+      developer.language === "JavaScript"
+    ) {
       europeanJSDevs.push(developer);
     }
   });
@@ -27,8 +33,11 @@ function countDevelopers(list) {
 
 // Function declaration; reduce method; ternary operator
 function countDevelopers(list) {
-  return list.reduce((acc, developer) => 
-    (developer.continent === 'Europe' && developer.language === 'JavaScript')
-      ? acc + 1 : acc
-    , 0);
+  return list.reduce(
+    (acc, developer) =>
+      developer.continent === "Europe" && developer.language === "JavaScript"
+        ? acc + 1
+        : acc,
+    0
+  );
 }

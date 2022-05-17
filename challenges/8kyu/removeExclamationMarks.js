@@ -2,5 +2,5 @@
 
 // Function declaration; regex
 function removeExclamationMarks(s) {
-  return s.replace(/!/g, '');
+  return s.replace(/!/g, "");
 }

@@ -5,7 +5,7 @@
 
 // Function declaration; split method; sort method
 function highAndLow(numbers) {
-  const array = numbers.split(' ');
+  const array = numbers.split(" ");
   const sortedArray = array.sort((a, b) => a - b);
   const lowestNumber = Number(sortedArray[0]);
   const highestNumber = Number(sortedArray[sortedArray.length - 1]);
@@ -13,8 +13,8 @@ function highAndLow(numbers) {
 }
 
 // Function declaration; split method; spread syntax; Math.min and Math.max to obtain the lowest and highest number in the array
-function highAndLow(numbers){
-  const array = numbers.split(' ');
+function highAndLow(numbers) {
+  const array = numbers.split(" ");
   const lowestNumber = Math.min(...array);
   const highestNumber = Math.max(...array);
   return `${highestNumber} ${lowestNumber}`;

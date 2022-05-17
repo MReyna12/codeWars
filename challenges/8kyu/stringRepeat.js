@@ -7,7 +7,7 @@ function repeatStr(n, s) {
 
 // Function declaration/for loop
 function repeatStr(n, s) {
-  let str = ''
+  let str = "";
   for (let i = 0; i < n; i++) {
     str += s;
   }
@@ -16,9 +16,9 @@ function repeatStr(n, s) {
 
 // Function expression/arrow function/for loop
 const repeatStr = (n, s) => {
-  let str = ''
+  let str = "";
   for (let i = 0; i < n; i++) {
     str += s;
   }
   return str;
-}
+};

@@ -2,7 +2,7 @@
 // Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
 
 // Function expression/arrow function
-const stringToNumber = str => Number(str);
+const stringToNumber = (str) => Number(str);
 
 // Function declaration
 function stringToNumber(str) {

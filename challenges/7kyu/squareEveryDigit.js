@@ -4,24 +4,29 @@
 
 // Function declaration; array; forEach
 function squareDigits(num) {
-  let array = num.toString().split('');
+  let array = num.toString().split("");
   array.forEach((element, index) => {
     array[index] = Math.pow(element, 2);
   });
-  return Number(array.join(''));
+  return Number(array.join(""));
 }
 
 // Function declaration; array; map method
 function squareDigits(num) {
-  let string = num.toString().split('').map(element => element * element).join('');
+  let string = num
+    .toString()
+    .split("")
+    .map((element) => element * element)
+    .join("");
   return Number(string);
 }
 
 // FUnction declaration; array; reduce method
 function squareDigits(num) {
-  let array = num.toString().split('');
-  let result = array.reduce((previous, current) => previous += current * current, '');
+  let array = num.toString().split("");
+  let result = array.reduce(
+    (previous, current) => (previous += current * current),
+    ""
+  );
   return Number(result);
 }
-
-

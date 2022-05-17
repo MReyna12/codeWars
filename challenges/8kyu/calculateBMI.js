@@ -6,32 +6,32 @@
 
 // Function declaration/switch/case
 function bmi(weight, height) {
-  let bmi = weight/Math.pow(height, 2);
+  let bmi = weight / Math.pow(height, 2);
   switch (true) {
-    case (bmi <= 18.5):
-      return 'Underweight';
+    case bmi <= 18.5:
+      return "Underweight";
       break;
-    case (bmi <= 25):
-      return 'Normal';
+    case bmi <= 25:
+      return "Normal";
       break;
-    case (bmi <= 30):
-      return 'Overweight';
+    case bmi <= 30:
+      return "Overweight";
       break;
     default:
-      return 'Obese';
+      return "Obese";
   }
 }
 
 // Function expression/if/else if statements
 const bmi = (weight, height) => {
-  let bmi = weight/Math.pow(height, 2);
+  let bmi = weight / Math.pow(height, 2);
   if (bmi <= 18.5) {
-    return 'Underweight';
+    return "Underweight";
   } else if (bmi <= 25) {
-      return 'Normal';
+    return "Normal";
   } else if (bmi <= 30) {
-      return 'Overweight';
+    return "Overweight";
   } else {
-      return 'Obese';
+    return "Obese";
   }
-}
+};

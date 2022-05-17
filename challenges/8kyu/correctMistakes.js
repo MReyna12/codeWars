@@ -7,16 +7,16 @@
 
 // Function declaration; for loop
 function correct(string) {
-  let correctedString = '';
+  let correctedString = "";
   for (let i = 0; i < string.length; i++) {
-    if (string[i] === '5') {
-      correctedString += 'S';
-    } else if (string[i] === '0') {
-        correctedString += 'O';
-    } else if (string[i] === '1') {
-        correctedString += 'I'
+    if (string[i] === "5") {
+      correctedString += "S";
+    } else if (string[i] === "0") {
+      correctedString += "O";
+    } else if (string[i] === "1") {
+      correctedString += "I";
     } else {
-        correctedString += string[i];
+      correctedString += string[i];
     }
   }
   return correctedString;

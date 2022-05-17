@@ -4,19 +4,18 @@
 
 // Function declaration; findIndex method; template literal
 function findNeedle(haystack) {
-  const needleIndex = haystack.findIndex(element => element === 'needle');
+  const needleIndex = haystack.findIndex((element) => element === "needle");
   return `found the needle at position ${needleIndex}`;
 }
-
 
 // Function expression; findIndex method; template literal
-const findNeedle = haystack => {
-  const needleIndex = haystack.findIndex(element => element === 'needle');
+const findNeedle = (haystack) => {
+  const needleIndex = haystack.findIndex((element) => element === "needle");
   return `found the needle at position ${needleIndex}`;
-}
+};
 
 // Function declaration; indexOf method; tempalte literal
 function findNeedle(haystack) {
-  const needleIndex = haystack.indexOf('needle');
+  const needleIndex = haystack.indexOf("needle");
   return `found the needle at position ${needleIndex}`;
 }

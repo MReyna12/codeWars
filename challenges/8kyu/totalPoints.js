@@ -7,17 +7,17 @@
 // Function declaration; forEach method; if else/else if
 function points(games) {
   let sum = 0;
-  games.forEach(element => {
+  games.forEach((element) => {
     let value1 = Number(element[0]);
     let value2 = Number(element[2]);
     if (value1 > value2) {
       sum += 3;
     } else if (value1 < value2) {
-        sum += 0;
+      sum += 0;
     } else if (value1 == value2) {
-        sum += 1;
+      sum += 1;
     }
-  })
+  });
   return sum;
 }
 
@@ -30,9 +30,9 @@ function points(games) {
     if (value1 > value2) {
       sum += 3;
     } else if (value1 < value2) {
-        sum += 0;
+      sum += 0;
     } else if (value1 == value2) {
-        sum += 1;
+      sum += 1;
     }
   }
   return sum;

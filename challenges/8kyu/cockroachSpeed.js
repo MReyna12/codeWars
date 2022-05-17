@@ -3,5 +3,5 @@
 
 // Function declaration; math.floor method
 function cockroachSpeed(s) {
-  return Math.floor(s * 27.7778)
+  return Math.floor(s * 27.7778);
 }

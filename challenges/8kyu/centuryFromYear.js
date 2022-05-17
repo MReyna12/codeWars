@@ -7,14 +7,14 @@ function century(year) {
   if (year <= 100) {
     centuryResult = 1;
   } else if (year % 100 === 0) {
-      centuryResult = (year / 100);
+    centuryResult = year / 100;
   } else {
-      centuryResult = Math.floor(year / 100) + 1;
-    }
+    centuryResult = Math.floor(year / 100) + 1;
+  }
   return centuryResult;
 }
 
 // Function declaration; math.ceil function; one-liner for Codewars
 function century(year) {
-  return Math.ceil(year/100);
+  return Math.ceil(year / 100);
 }

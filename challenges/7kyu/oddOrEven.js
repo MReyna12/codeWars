@@ -5,5 +5,5 @@
 // Function declaration
 function oddOrEven(array) {
   const sum = array.reduce((acc, currentVal) => acc + currentVal, 0);
-  return sum % 2 === 0 ? 'even' : 'odd';
+  return sum % 2 === 0 ? "even" : "odd";
 }

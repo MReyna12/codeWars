@@ -3,23 +3,32 @@
 
 // Function declaration/arrow function
 function abbrevName(name) {
-  return name.split(' ').map(x => x.slice(0, 1)).join('.').toUpperCase();
+  return name
+    .split(" ")
+    .map((x) => x.slice(0, 1))
+    .join(".")
+    .toUpperCase();
 }
 
 // Function expression/arrow function
-const abbrevName = name => name.split(' ').map(x => x.slice(0, 1)).join('.').toUpperCase();
+const abbrevName = (name) =>
+  name
+    .split(" ")
+    .map((x) => x.slice(0, 1))
+    .join(".")
+    .toUpperCase();
 
 // Function declaration/forEach
 function abbrevName(name) {
   let initials = [];
-  name.split(' ').forEach((x) => {
+  name.split(" ").forEach((x) => {
     let i = x.slice(0, 1);
     initials.push([i]);
-  })
-  return initials.join('.').toUpperCase();
+  });
+  return initials.join(".").toUpperCase();
 }
 
 function abbrevName(name) {
-  const arrayNames = name.split(' ');
+  const arrayNames = name.split(" ");
   return `${arrayNames[0][0]}.${arrayNames[1][0]}`.toUpperCase();
 }

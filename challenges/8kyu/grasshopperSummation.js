@@ -7,7 +7,7 @@ const summation = function (num) {
     sum += i;
   }
   return sum;
-}
+};
 
 // Function declaration
 function summation(num) {
@@ -19,10 +19,10 @@ function summation(num) {
 }
 
 // Function expression/arrow function
-const summation = num => {
+const summation = (num) => {
   let sum = 0;
   for (let i = 1; i <= num; i++) {
     sum += i;
   }
   return sum;
-}
+};
