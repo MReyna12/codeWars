@@ -4,3 +4,12 @@ const Ball = function (ballType) {
     return (this.ballType = "regular");
   }
 };
+
+class Ball {
+  constructor(ballType) {
+    this.ballType = ballType;
+    if (!this.ballType) {
+      this.ballType = "regular";
+    }
+  }
+}
