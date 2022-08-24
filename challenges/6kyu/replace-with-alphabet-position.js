@@ -6,7 +6,7 @@
 function alphabetPosition(text) {
   if (text.length === 0) return text;
 
-  let alphabet = {
+  const alphabet = {
     a: 1,
     b: 2,
     c: 3,
